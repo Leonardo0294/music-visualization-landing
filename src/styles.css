@@ -1,94 +1,88 @@
 /* styles.css */
 
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-    color-scheme: light dark;
-    color: #ffffff; /* Color de texto negro */
-    background-color: #ffffff; /* Color de fondo blanco */
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-    font-weight: 500;
-    color: #646cff;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #535bf2;
+    /* Variables CSS personalizadas si es necesario */
 }
 
 body {
     margin: 0;
+    padding: 20px; /* Agrega relleno para un mejor espaciado */
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    position: relative; /* Establecer posición relativa para posicionar la imagen de marca de agua */
-    background-image: url('./assets/music.jpg'); /* Ruta relativa a la imagen de fondo */
-    background-size: cover; /* Escalar la imagen para cubrir todo el cuerpo */
-    background-position: center; /* Centrar la imagen en el cuerpo */
+    background-image: url('./assets/music.jpg');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    -webkit-background-size: cover; /* Para navegadores webkit (Safari, Chrome) */
-    -moz-background-size: cover; /* Para navegadores Firefox */
-    -o-background-size: cover; /* Para navegadores Opera */
-    background-attachment: fixed; /* Fijar la imagen de fondo para que no se desplace con el contenido */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff; /* Color de texto blanco para todo el cuerpo */
+    font-family: Arial, sans-serif; /* Fuente de texto predeterminada */
 }
 
 .container {
-    text-align: center; /* Alinear contenido interno al centro */
+    text-align: center;
+    padding: 20px; /* Añade relleno al contenedor principal */
 }
 
 h1 {
-    font-size: 3.2em;
+    font-size: 2.5em;
     line-height: 1.1;
-    color: #ffffff; /* Color de texto negro */
+    margin-bottom: 20px;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-bottom: 20px;
-    color: #ffffff; /* Color de texto negro */
 }
 
 button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
+    /* Estilos de botón existentes */
+    margin: 10px;
+    padding: 10px 20px;
     font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #1a1a1a;
-    color: #ffffff;
+    background-color: #007bff; /* Color de fondo azul */
+    color: #ffffff; /* Color de texto blanco */
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: border-color 0.25s;
-    margin: 10px; /* Agregar espacio alrededor de cada botón */
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    border-color: #646cff;
+    background-color: #0056b3; /* Color de fondo azul más oscuro al pasar el mouse */
 }
 
-button:focus,
-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-}
+@media (min-width: 768px) {
+    /* Ajustar estilos para tabletas y pantallas más grandes */
+    h1 {
+        font-size: 3em;
+    }
+    
+    p {
+        font-size: 1.2em;
+    }
 
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #000000; /* Color de texto negro en modo claro */
-        background-color: #ffffff; /* Color de fondo blanco en modo claro */
-    }
-    a:hover {
-        color: #747bff;
-    }
     button {
-        background-color: #f9f9f9;
-        color: #000000;
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Ajustar estilos para pantallas de escritorio más grandes */
+    h1 {
+        font-size: 3.5em;
+    }
+    
+    p {
+        font-size: 1.3em;
+    }
+
+    button {
+        font-size: 1.2em;
     }
 }
