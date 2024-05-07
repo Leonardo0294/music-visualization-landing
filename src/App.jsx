@@ -43,7 +43,7 @@ const App = () => {
         <div style={{ textAlign: 'center' }}>
             <h1>Graficos de Billboard Hot 100 Charts</h1>
             <p>
-                A continuación le presentamos dos gráficos hechos con Google Charts, basados en la lista "Billboard Hot 100 Songs" desde 1958 hasta 2021.
+                A continuación le presentamos dos gráficos, basados en la lista "Billboard Hot 100 Songs" desde 1958 hasta 2021.
             </p>
             <div style={{ marginBottom: '20px' }}>
                 <button onClick={showLineChart}>Mostrar Gráfico de Líneas</button>
